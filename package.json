@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "array": "node --watch ./nd/4-mini-array.js",
     "funkcijos": "node --watch ./nd/funkcijos.js",
     "palyginimas": "node --watch ./nd/3-Kintamuju-palyginimas.js",
     "veiksmai": "node --watch ./nd/2-Veiksmai-su-kintamaisiais.js",
