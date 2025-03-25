@@ -1,0 +1,16 @@
+{
+  "name": "namu-darbai",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "funkcijos": "node --watch ./nd/funkcijos.js",
+    "palyginimas": "node --watch ./nd/3-Kintamuju-palyginimas.js",
+    "veiksmai": "node --watch ./nd/2-Veiksmai-su-kintamaisiais.js",
+    "inicijavimas": "node --watch ./nd/1-Kintamuju-inicijavimas.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Aura",
+  "license": "ISC",
+  "description": ""
+}
