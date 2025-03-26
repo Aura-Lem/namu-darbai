@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "for": "node --watch ./nd/7-for.js",
+    "function": "node --watch ./nd/6-mini-function.js",
     "if": "node --watch ./nd/5-mini-if.js",
     "array": "node --watch ./nd/4-mini-array.js",
     "funkcijos": "node --watch ./nd/funkcijos.js",
