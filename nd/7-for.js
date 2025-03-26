@@ -25,7 +25,7 @@ console.log('6)', intervalSum(574, 815));
 console.log('2--------------');
 // Panaudojant cikla perrasyti tekstinio tipo kintamuju reiksmes is kito galo.
 
-const word = 'asd';
+const word = 'abcdef';
 
-for (i = 1; i < 3; i++);
-  console.log(word[2] + word[1] + word[0]);
+for (let i = 1; i < 5; i--);
+  
