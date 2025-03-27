@@ -208,3 +208,12 @@ if (d1[0] === d1[1] && d1[1] === d1[2]) {
 } else {
     console.log('a) Masyve nera 3 to paties skaiciaus elementu.');
 }
+
+console.log('-------------');
+// ciklas cikle.
+for (let i = 0; i < 3; i++) {
+    console.log('i: ' + i);
+    for (let j = 0; j < 3; j++){
+    console.log('j: ' + j);
+    }
+}

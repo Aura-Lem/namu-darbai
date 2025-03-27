@@ -74,9 +74,25 @@ function priesingaReiksme(kintamasis) {
    }
 }
 
+
+//function priesingaReiksme(kintamasis) {
+   // if (kintamasis >= 0) {   
+      //   console.log('-', kintamasis);
+   // } if (kintamasis < 0) {   
+    //    console.log(kintamasis * -1);
+  // } if (typeof kintamasis === 'string'); 
+   //     let raide = '';
+   //     let pilnasZodis = '';
+   //     for (let i = kintamasis.length - 1; i >= 0; i--){
+   //         raide = kintamasis.charAt(i)
+    //        pilnasZodis += raide;
+  // }
+//}
+
 priesingaReiksme(-7);
 priesingaReiksme(7);
 priesingaReiksme('Labas');
+
 
 console.log('7------------');
 // Sukurti funkcija, kuri apskaiciuotu staciakampio plota.
