@@ -56,21 +56,21 @@ for (i = 0; i <= 10; i++) {
 console.log('8------------------');
 // Atspausdinti nuo 1 iki 5 zvaigzduciu serija.
 
-function halfTree(star) {
-    for (i = 0; i < 1; i++) {
-        let i = '*';
-        console.log(i);
-        for (k = 0; k < 4; k++) {
-            let k = i + '*';
-            console.log(k);
-        } 
-    }
+let k = 5;
+for (let i = 1; i <= k; i++) {
+    let star = '*';
+    console.log(star.repeat(i));
 }
 
-halfTree(5);
 
 console.log('9------------------');
-// Atspausdinti atvirkstine eiga su 5 zvaigzdutemis eilutese.
+// Atspausdinti atvirkstine eiga su zvaigzdutemis 5 eilutese.
+
+let n = 5;
+for (let i = n; i >= 1; i--) {
+    let star = '*';
+    console.log(star.repeat(i));
+}
 
 console.log('10------------------');
 // Spausdinti skaicius nuo 1 iki 50, kurie dalijasi is 3.
