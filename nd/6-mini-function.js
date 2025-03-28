@@ -98,3 +98,102 @@ console.log('7------------');
 // Sukurti funkcija, kuri apskaiciuotu staciakampio plota.
 //  - su saraso (array) tipo kintamuoju.
 //  - su keliais skaiciu tipo kintamaisiais.
+
+function staciakampioPlotas(multiply) {
+         result = multiply[0] * multiply[1];
+         return 'a)' + result;
+}
+console.log(staciakampioPlotas([5, 3]));
+console.log(staciakampioPlotas([6, 2]));
+console.log(staciakampioPlotas([10, 8]));
+
+function staciakampioPlotas1(a, b) {
+    result = a * b;
+    return 'b)' + result;
+}
+
+console.log(staciakampioPlotas1(6, 5));
+console.log(staciakampioPlotas1(9, 2));
+console.log(staciakampioPlotas1(7, 4));
+
+console.log('8------------');
+// Sukurti funkcija, kuri tikrina ar skaicius dalijasi is 3.
+
+function skaiciusIs3(number) {
+    if (number % 3 === 0){
+        console.log('Skaicius dalijasi is 3.');
+    } else {
+        console.log('Skaicius nesidalija is 3.')
+    }
+}
+skaiciusIs3(0);
+skaiciusIs3(2);
+skaiciusIs3(15);
+skaiciusIs3(-40);
+
+console.log('9------------');
+// Sukurti funkcija, kuri tikrina ar teksto tipo kintamasis prasideda raide 'a'.
+
+function pirmaRaide(zodis) {
+    let raide = zodis[0];
+    if (raide === 'a' || raide === 'A') {
+        return 'Zodis prasideda raide "a".';
+    } else {
+        return 'Zodis prasideda ne "a" raide.';
+    }
+}
+
+console.log(pirmaRaide('Labas'));
+console.log(pirmaRaide('Auksas'));
+
+console.log('10------------');
+// Sukurti funkcija triju skaiciu vidurkiui rasti.
+
+function vidurkis(a, b, c) {
+    let result = (a + b + c) / 3;
+    return result;
+}
+
+console.log(vidurkis(3, 5, 8));
+console.log(vidurkis(-2, 10, 7));
+
+console.log('11------------');
+// Sukurti funkcija, grazinancia teksto tipo kintamojo ilgi.
+
+function tekstoIlgis(text) {
+    let a = text.length;
+    return a;
+}
+
+console.log(tekstoIlgis('Labas'));
+console.log(tekstoIlgis('penktadienis'));
+console.log(tekstoIlgis('Laba diena'));
+
+console.log('12------------');
+// Sukurti funkcija dviem eilutems sujungti.
+
+function dviEilutes(masyvas) {
+      let result = masyvas[0] + ' ' + masyvas[1];
+      return result;
+}
+
+console.log(dviEilutes(['viena eilute', 'antra eilute']));
+console.log(dviEilutes(['Laba', 'diena']));
+
+console.log('13------------');
+// Sukurti funkcija, kuri tikrina ar skaicius yra tarp dvieju reiksmiu (imtinai).
+
+function skaiciusTarpReiksmiu(number, range1, range2) {
+    if (range1 > range2) {
+        return 'Neteisingai pateiktas intervalas.'
+    }
+    if (number >= range1 && number <= range2) {
+        return `${number} yra skaiciu ${range1} ir ${range2} intervale`;
+    } else {
+        return `${number} nera skaiciu ${range1} ir ${range2} intervale`;
+    }
+}
+
+console.log(skaiciusTarpReiksmiu(5, 0, 10));
+console.log(skaiciusTarpReiksmiu(20, 0, 10));
+console.log(skaiciusTarpReiksmiu(15, 20, 10));

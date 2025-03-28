@@ -15,7 +15,7 @@ for (let i = 10; i > 0; i--){
 console.log('3------------------');
 // Spausdinti kiekviena lygini skaiciu nuo 0 iki 20 naudojant cikla.
 
-let i = 0;
+
 for (i = 0; i <= 20; i++) {
     if (i % 2 === 0) {
         console.log(i);
@@ -25,7 +25,7 @@ for (i = 0; i <= 20; i++) {
 console.log('4------------------');
 // Spausdinti kiekviena nelygini skaiciu nuo 0 iki 20 naudojant cikla.
 
-let j = 0;
+
 for (j = 0; j <= 20; j++) {
     if (j % 2 !== 0) {
         console.log(j);
@@ -35,31 +35,31 @@ for (j = 0; j <= 20; j++) {
 console.log('5------------------');
 // Spausdinti pirmuosius 10 skaiciu kvadratu.
 
-for (i = 0; i <=10; i++) {
+for (let i = 0; i <=10; i++) {
     console.log(i**2);
 }
 
 console.log('6------------------');
 // Spausdinti pirmuosius 10 skaiciu kubu.
 
-for (i = 0; i <=10; i++) {
+for (let i = 0; i <=10; i++) {
     console.log(i**3);
 }
 
 console.log('7------------------');
 // Atspausdinti 7 daugybos lentele.
 
-for (i = 0; i <= 10; i++) {
+for (let i = 0; i <= 10; i++) {
     console.log(i*7);
 }
 
 console.log('8------------------');
 // Atspausdinti nuo 1 iki 5 zvaigzduciu serija.
 
-let k = 5;
-for (let i = 1; i <= k; i++) {
-    let star = '*';
-    console.log(star.repeat(i));
+let star = '';
+for (let i = 0; i <= 5; i++) {
+    star += '*';
+    console.log(star);
 }
 
 
@@ -68,8 +68,8 @@ console.log('9------------------');
 
 let n = 5;
 for (let i = n; i >= 1; i--) {
-    let star = '*';
-    console.log(star.repeat(i));
+    let star1 = '*';
+    console.log(star1.repeat(i));
 }
 
 console.log('10------------------');
