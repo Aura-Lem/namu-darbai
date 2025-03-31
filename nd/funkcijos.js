@@ -109,3 +109,24 @@ console.log(digitCount(-5.5));
 
 //console.log(digitCount(1000000000000000000000));
     
+console.log('5--------------------');
+// Funkcija pavadinimu 'isrinktiRaides'.
+
+function isrinktiRaides(tekstas, skaicius) {
+    if (typeof tekstas !== 'string') {
+        return 'Pirmasis kintamasis yra netinkamo tipo.';
+    } if (tekstas === '') {
+        return 'Reikia irasyti teksta.'
+    } if (tekstas.length > 100) {
+        return 'Tekstas per ilgas';
+    } for (i = 0; i <= tekstas.length; i++) {
+        let raide = tekstas[0];
+        console.log(raide);
+    };
+    
+}
+
+console.log(isrinktiRaides(2, 2));
+console.log(isrinktiRaides('', 2));
+console.log(isrinktiRaides('laaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabai ilgas tekstas', 2));
+isrinktiRaides('Labas', 2);

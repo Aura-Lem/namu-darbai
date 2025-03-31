@@ -95,11 +95,11 @@ function intervalCount(start, end, divider) {
     }
     let count = 0;
     //1) versija, kai einame per kiekviena skaiciu.
-    for (let i = start; i <= end; i++){
-        if (i % divider === 0){
-           count++;
-        }
-    }
+    //for (let i = start; i <= end; i++){
+       // if (i % divider === 0){
+      //     count++;
+      //  }
+   // }
  
     // 2) labiau optimizuota versija.
     //const trueStart = start;
@@ -108,6 +108,11 @@ function intervalCount(start, end, divider) {
        // }
     // 3) galutinis tikslas yra formule, kurios uzuomina: count = (end - start) / divider;
 
+    for (let i = start; i <= end; i++){
+        if (i % divider === 0){
+           count++;
+        }
+    }
     return `Skaiciu intervale tarp ${start} ir ${end} besidalijanciu be liekanos is ${divider} yra ${count} vienetai.`
 }
 
