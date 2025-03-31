@@ -85,7 +85,7 @@ function intervalCount(start, end, divider) {
         return 'Intervalo pradzia turi buti sveikasis skaicius.';
     }
     if (end % 1 !== 0) {
-        return 'Intervalo ppabaiga turi buti sveikasis skaicius.';
+        return 'Intervalo pabaiga turi buti sveikasis skaicius.';
     }
     if (divider % 1 !== 0) {
         return 'Daliklis turi buti sveikasis skaicius.';
