@@ -36,3 +36,42 @@ function dalybaIsVisu(number1){
 }
 
 dalybaIsVisu(number1);
+
+console.log('4---------------');
+// Spausdinti skaicius nuo 1 iki 20 ir prie kiekvieno lyginio skaiciaus prideti 'Even', o prie kiekvieno nelyginio - 'Odd'.
+
+for (let i = 0; i <= 20; i++) {
+    if (i % 2 === 0) {
+        console.log(i + ' Even');
+    } else {
+        console.log(i + ' Odd');
+    }
+}
+
+console.log('5---------------');
+// Spausdinti bet kurio pasirinkto skaiciaus daugybos lentele.
+
+function daugybosLentele(daugiklis) {
+    for (let i = 0; i<=10; i++) {
+        console.log(i * daugiklis); 
+    }
+}
+
+daugybosLentele(7);
+
+console.log('6---------------');
+// Sukurti for cikla, kuris spausdina skaicius nuo 1 iki 30, bet tik tuos, kurie dalijasi is 2 arba 3.
+
+for (let i = 0; i <= 30; i++) {
+    if (i % 2 === 0 ||i % 3 === 0) {
+        console.log(i);
+    }
+}
+
+console.log('7---------------');
+// Sukurti for cikla, kad patikrinti ar skaicius yra pirminis ir isspausdintu pranesima.
+
+
+
+
+
