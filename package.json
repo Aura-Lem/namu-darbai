@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "miestai": "node --watch ./nd/13-miestai.js",
     "temperaturos": "node --watch ./nd/12-temperaturos.js",
     "raides": "node --watch ./nd/11-raides.js",
     "atvirukai": "node --watch ./nd/10-atvirukai.js",

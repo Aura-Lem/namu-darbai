@@ -71,13 +71,7 @@ console.log(maziausiaTemperatura(sekmadienis));
 
 console.log('e) Parasyti funkcija, kuri apskaiciuotu visos savaites vidutine temperatura');
 
-let a = [0, 3, 5, 8, 6];
-let b = [-5, -3, -2, 0, 1];
-let c = [2, 5, 8, 10, 7];
-let d = [5, 8, 11, 9, 6];
-let e = [6, 8, 11, 9, 5];
-let f = [6, 9, 12, 15, 10];
-let g = [9, 12, 16, 14, 11];
+
 
 
 
