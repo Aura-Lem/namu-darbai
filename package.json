@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "mini": "node --watch ./nd/14-mini.js",
     "miestai": "node --watch ./nd/13-miestai.js",
     "temperaturos": "node --watch ./nd/12-temperaturos.js",
     "raides": "node --watch ./nd/11-raides.js",
