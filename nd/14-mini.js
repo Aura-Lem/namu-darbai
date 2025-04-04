@@ -283,6 +283,135 @@ function dalybaIs5(skaicius) {
 }
 console.log(dalybaIs5(25));
 
+console.log('Funkcijos 10----------------');
+
+function lygus100(skaicius) {
+    if (skaicius === 100) {
+        return 'Skaicius lygus 100';
+    } else {
+        return 'Skaicius nelygus 100';
+    }
+}
+console.log(lygus100(100));
+console.log(lygus100(99));
+
+console.log('Funkcijos 11----------------');
+
+function didesnisUz10(skaicius) {
+    if (skaicius > 10) {
+        return 'Skaicius didesnis uz 10';
+    } else {
+        return 'Skaicius mazesnis uz 10';
+    }
+}
+console.log(didesnisUz10(12));
+console.log(didesnisUz10(9));
+
+console.log('Funkcijos 12----------------');
+
+function didesnisSkaicius(a, b) {
+    if ( a > b) {
+        return a;
+    } else if ( a < b) {
+        return b;
+    }
+}
+
+console.log(didesnisSkaicius(15, 6));
+console.log(didesnisSkaicius(2, 36));
+
+console.log('Funkcijos 13----------------');
+
+function mazesnisSkaicius(a, b) {
+    if ( a < b) {
+        return a;
+    } else if ( a > b) {
+        return b;
+    }
+}
+
+console.log(mazesnisSkaicius(15, 6));
+console.log(mazesnisSkaicius(2, 36));
+
+console.log('Funkcijos 14----------------');
+
+function vienodiSkaiciai(a, b, c) {
+    if (a === b && b === c) {
+        return 'skaiciai vienodi';
+    } else {
+        return 'Skaiciai nevienodi';
+    }
+}
+
+console.log(vienodiSkaiciai(2, 2, 2));
+console.log(vienodiSkaiciai(2, 5, 7));
+console.log(vienodiSkaiciai(2, 2, 6));
+
+console.log('Funkcijos 15----------------');
+
+function lygusSkaiciai(a, b) {
+    if (a === b) {
+        return 'Skaiciai lygus';
+    } else {
+        return 'Skaiciai nelygus';
+    }
+}
+
+console.log(lygusSkaiciai(2, 2));
+console.log(lygusSkaiciai(2, 7));
+
+console.log('Funkcijos 16----------------');
+
+function skaiciaiTarp1Ir10(number) {
+    if (number > 1 && number < 10) {
+        return 'Skaicius yra tarp 1 ir 10';
+    } else {
+        return 'Skaicius nera tarp 1 ir 10';
+    }
+}
+
+console.log(skaiciaiTarp1Ir10(9));
+console.log(skaiciaiTarp1Ir10(20));
+
+console.log('Funkcijos 17----------------');
+
+function skaiciaiTarp50Ir100(number) {
+    if (number > 50 && number < 100) {
+        return 'Skaicius yra tarp 50 ir 100';
+    } else {
+        return 'Skaicius nera tarp 50 ir 100';
+    }
+}
+
+console.log(skaiciaiTarp50Ir100(90));
+console.log(skaiciaiTarp50Ir100(20));
+
+console.log('Funkcijos 18----------------');
+
+function neigiamasSkaicius(number) {
+    if (number > 0) {
+        return 'Skaicius yra teigiamas';
+    } else {
+        return 'Skaicius yra neigiamas';
+    }
+}
+
+console.log(neigiamasSkaicius(9));
+console.log(neigiamasSkaicius(-2));
+
+console.log('Funkcijos 19----------------');
+
+function neigiamasSkaicius1(number) {
+    if (number > 0) {
+        return 'Teigiamas';
+    } else {
+        return 'Neigiamas';
+    }
+}
+
+console.log(neigiamasSkaicius1(9));
+console.log(neigiamasSkaicius1(-2));
+
 console.log('Funkcijos 20----------------');
 
 function ar18(skaicius) {
@@ -382,3 +511,38 @@ function vienodiZodziai(zodis1, zodis2) {
 
 console.log(vienodiZodziai('labas', 'labas'));
 console.log(vienodiZodziai('labas', 'iki'));
+
+console.log('Funkcijos 29----------------');
+
+function dienaNaktis(valanda) {
+    if (valanda >= 6 && valanda < 22) {
+        return 'Diena';
+    } if (valanda < 6 || valanda >= 22) {
+        return 'Naktis';
+    }
+}
+
+console.log(dienaNaktis(15));
+console.log(dienaNaktis(23));
+
+console.log('Funkcijos 30----------------');
+
+function skaiciausVerte(skaicius) {
+    if (skaicius > 0) {
+        return 'esu teigiamas';
+    } if (skaicius < 0 ) {
+        return 'esu neigiamas';
+    } if (skaicius === 0) {
+        return 'esu 0';
+    } if (skaicius > 100) {
+        return 'didziulis skaicius';
+    } if (skaicius <= 100) {
+        return 'esu maziukas';
+    }
+}
+
+console.log(skaiciausVerte(5));
+console.log(skaiciausVerte(-6));
+console.log(skaiciausVerte(0));
+console.log(skaiciausVerte(150));
+console.log(skaiciausVerte(99));
