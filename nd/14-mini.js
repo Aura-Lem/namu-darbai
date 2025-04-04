@@ -1,3 +1,77 @@
+console.log('1----------------');
+let suma = 5;
+
+for (let i = 6; i <= 15; i++) {
+    suma = suma + i;
+}
+console.log(suma);
+
+console.log('2----------------');
+
+let zodis1 = 'Vakaras';
+for (let i = 0; i < zodis1.length; i++) {
+    console.log(zodis1[i]);
+}
+
+console.log('3----------------');
+let number = 6;
+for (let i = 0; i <= 10; i++) {
+    console.log(number * i);
+}
+
+console.log('4----------------');
+
+for (let i = 5; i >= 0; i--) {
+    if (i === 0) {
+        console.log('BOOM');
+    }
+    console.log(i);
+}
+
+console.log('5----------------');
+let sum = 0;
+for (let i = 4; i <= 18; i += 2) {
+    sum = sum + i;
+}
+console.log(sum);
+
+console.log('6----------------');
+
+let sarasas = ['pirmas', 'antras', 'trecias', 'ketvirtas', 'penktas'];
+let nariai = '';
+for (i = 0; i < sarasas.length; i++) {
+
+    nariai += sarasas[i] + ' ';
+   
+}
+console.log(nariai);
+
+console.log('7----------------');
+let vardai = ['Jonas', 'Maryte', 'Petras', 'Ona'];
+let vardas = '';
+
+for (i = 0; i < vardai.length; i++) {
+    vardas = vardai[i];
+    console.log('Mano vardas - ' + vardas);
+}
+
+console.log('8----------------');
+let skaiciai = [1, 2, 3, 4, 5];
+let susumuoti = 0;
+for ( i = 0; i <= skaiciai.length; i++){
+    susumuoti = susumuoti + i;
+}
+console.log(susumuoti);
+
+console.log('9----------------');
+
+let elementai = [6, 9, 4, 3, 5];
+let vertes = ''; 
+for (i = elementai.length - 1; i >= 0; i--) {
+    vertes = elementai[i];
+    console.log(vertes);
+}
+
 console.log('10----------------');
 
 for (let i = 1; i <= 500; i++) {
@@ -41,6 +115,15 @@ for ( let i = 20; i >= 10; i--) {
     console.log(i);
 }
 
+console.log('14----------------');
+
+let nelSuma = 0;
+
+for (let i = 1; i <= 30; i+=2) {
+    nelSuma = nelSuma + i;
+}
+console.log(nelSuma);
+
 console.log('16----------------');
 const raidesAtbulai = ['s', 'a', 'b', 'a', 'L'];
 
@@ -81,15 +164,48 @@ for (let i = 0; i < daugSkaiciu.length; i++) {
     }
 }
 
-console.log('14----------------');
-
-let nelSuma = 0;
-
-for (let i = 1; i <= 30; i+=2) {
-    nelSuma = nelSuma + i;
+console.log('21----------------');
+let word = 'abrakadabra';
+let kiekis = 0;
+for (let i = 0; i < word.length; i++) {
+   if (word[i] === 'a') {
+       kiekis = kiekis + 1;
+   }
 }
-console.log(nelSuma);
+console.log(kiekis);
 
+console.log('22----------------');
+
+let pridesiuSkaiciu = [2, 8, 88, 14];
+
+for(let i = 0; i < pridesiuSkaiciu.length; i++) {
+    console.log(pridesiuSkaiciu[i] + 2);
+}
+
+console.log('23----------------');
+
+
+let word1 = 'Nebeprisikiskiakopusteliaudavome';
+let kiekis1 = 0;
+for (let i = 0; i < word1.length; i++) {
+   if (word1[i] === 'e') {
+       kiekis1 = kiekis1 + 1;
+   }
+}
+console.log(kiekis1);
+
+console.log('24----------------');
+naujasZodis = 'Nebeprisikiskiakopusteliaudavome';
+for (let i = 0; i <naujasZodis.length; i++) {
+    
+}
+
+console.log('25----------------');
+let lobis = 150;
+for (let i = 20; i >= 15; i--) {
+    lobis = lobis - i;
+    console.log(lobis);
+} 
 console.log('Funkcijos 20----------------');
 
 function ar18(skaicius) {
