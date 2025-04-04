@@ -206,6 +206,83 @@ for (let i = 20; i >= 15; i--) {
     lobis = lobis - i;
     console.log(lobis);
 } 
+
+console.log('Funkcijos 1----------------');
+
+function sum2(a, b) {
+    return a + b;
+}
+console.log(sum2(2, 3));
+
+console.log('Funkcijos 2----------------');
+
+function minus(a, b) {
+    if ( a < b) {
+        return b - a;
+    } else {
+    return a - b;
+    }
+}
+console.log(minus(2, 3));
+
+console.log('Funkcijos 3----------------');
+
+function mult(a, b) {
+    return a * b;
+}
+console.log(mult(2, 3));
+
+console.log('Funkcijos 4----------------');
+
+function division(a, b) {
+    return a / b;
+}
+console.log(division(10, 5));
+
+console.log('Funkcijos 5----------------');
+
+function mid(a, b) {
+    return (a + b) / 2;
+}
+console.log(mid(6, 12));
+
+console.log('Funkcijos 6----------------');
+
+function teigiamas(skaicius) {
+    if (skaicius > 0) {
+        return 'Teigiamas';
+    } 
+}
+
+console.log(teigiamas(9));
+
+console.log('Funkcijos 7----------------');
+
+function lyginis(skaicius) {
+    if (skaicius % 2 === 0) {
+        return 'lyginis';
+    }
+}
+console.log(lyginis(6));
+
+console.log('Funkcijos 8----------------');
+
+function nelyginis(skaicius) {
+    if (skaicius % 3 === 0) {
+        return 'nelyginis';
+    }
+}
+console.log(nelyginis(9));
+
+console.log('Funkcijos 9----------------');
+
+function dalybaIs5(skaicius) {
+    if (skaicius % 5 === 0) {
+        return 'dalijasi';
+    }
+}
+console.log(dalybaIs5(25));
+
 console.log('Funkcijos 20----------------');
 
 function ar18(skaicius) {
