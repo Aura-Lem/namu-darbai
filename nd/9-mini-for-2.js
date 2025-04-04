@@ -37,6 +37,7 @@ function dalybaIsVisu(number1){
 
 dalybaIsVisu(number1);
 
+
 console.log('4---------------');
 // Spausdinti skaicius nuo 1 iki 20 ir prie kiekvieno lyginio skaiciaus prideti 'Even', o prie kiekvieno nelyginio - 'Odd'.
 

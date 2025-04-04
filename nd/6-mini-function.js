@@ -25,12 +25,19 @@ function skaiciausKvadratas(kvadratas) {
 const b = 2;
 console.log(skaiciausKvadratas(b));
 
-console.log('3------------');
-// Sukurti funkcija, kuri paima du skaicius ir isveda i console didesniji.
+console.log('3---------------');
+// Sukurti funkcija, kuri paima du skaicius ir grazina didesniji.
 
-function didesnisSkaicius(nuber) {
-    
+function didesnisSkaicius(a, b) {
+    if (a > b) {
+        return a;
+    } if (a < b) {
+        return b;
+    }
 }
+
+console.log(didesnisSkaicius(2, 5));
+console.log(didesnisSkaicius(7,3));
 
 console.log('4------------');
 // Sukurti funkcija, kuri patikrintu ar eiluteje yra zodis 'JavaScript'.
