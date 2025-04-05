@@ -171,7 +171,16 @@ if (typeof text1[0] === 'string' && typeof text1[1] === 'string' && typeof text1
 console.log('9--------------');
 // Rasti didziausia skaiciu sarase ir patikrinti ar jis didesnis uz 10.
 
-const c = [2, 5, 12, 4];
+function skaiciusSarase(sarasas) {
+     for (let i = 0; i < sarasas.length; i++) {
+        let skaicius = sarasas[i];
+        if (skaicius > 10) {
+            return skaicius + ' daugiau uz 10';
+        }
+     }
+}
+
+console.log(skaiciusSarase([2, 5, 12, 4]));
 
 console.log('10--------------');
 // Patikrinti ar masyve yra daugiau nei 3 to paties skaiciaus elementai.
