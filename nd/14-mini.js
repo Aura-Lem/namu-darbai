@@ -279,6 +279,8 @@ console.log('Funkcijos 9----------------');
 function dalybaIs5(skaicius) {
     if (skaicius % 5 === 0) {
         return 'dalijasi';
+    } else {
+        return 'nesidalija';
     }
 }
 console.log(dalybaIs5(25));
@@ -312,7 +314,7 @@ console.log('Funkcijos 12----------------');
 function didesnisSkaicius(a, b) {
     if ( a > b) {
         return a;
-    } else if ( a < b) {
+    } else  {
         return b;
     }
 }
@@ -325,7 +327,7 @@ console.log('Funkcijos 13----------------');
 function mazesnisSkaicius(a, b) {
     if ( a < b) {
         return a;
-    } else if ( a > b) {
+    } else {
         return b;
     }
 }
@@ -528,17 +530,21 @@ console.log(dienaNaktis(23));
 console.log('Funkcijos 30----------------');
 
 function skaiciausVerte(skaicius) {
+    let tekstas = '';
     if (skaicius > 0) {
-        return 'esu teigiamas';
-    } if (skaicius < 0 ) {
-        return 'esu neigiamas';
-    } if (skaicius === 0) {
-        return 'esu 0';
-    } if (skaicius > 100) {
-        return 'didziulis skaicius';
-    } if (skaicius <= 100) {
-        return 'esu maziukas';
+        tekstas = 'esu teigiamas ir ';
+    } else if (skaicius < 0 ) {
+        tekstas = 'esu neigiamas ir ';
+    } else {
+        tekstas = 'esu nulis ir ';
+    } 
+     
+    if  (skaicius > 100) {
+        tekstas = tekstas + 'esu didziulis.'
+    } if(skaicius < 100) {
+        tekstas = tekstas + 'esu maziukas.'
     }
+    return tekstas;
 }
 
 console.log(skaiciausVerte(5));
@@ -546,3 +552,16 @@ console.log(skaiciausVerte(-6));
 console.log(skaiciausVerte(0));
 console.log(skaiciausVerte(150));
 console.log(skaiciausVerte(99));
+
+const uogos = [10, 15, 63, 8, 75, 10];
+const grybai = [1, 5, 3, 8, 7, 10];
+
+function gSum(gerybe) {
+    let sum = 0;
+    for (let i = 0; i < gerybe.length; i++) {
+        sum += gerybe[i];
+    }
+    return sum;
+}
+
+console.log(gSum(grybai));
