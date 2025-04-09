@@ -72,7 +72,16 @@ for (let i = 0; i <= 30; i++) {
 console.log('7---------------');
 // Sukurti for cikla, kad patikrinti ar skaicius yra pirminis ir isspausdintu pranesima.
 
+function pirminisSkaicius(num) {
+if (num <= 1) return false;
+if (num < 3) return true;
+if (num % 2 === 0 || num % 3 === 0) return false;
 
+for (let i = 1; i <= 1000; i++) {
+    if (pirminisSkaicius(i) === true) {
+        console.log(i + ' ' + pirminisSkaicius(i));
+    }
+}
 
-
+}
 
