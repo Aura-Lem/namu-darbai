@@ -176,3 +176,24 @@ function pasikartojantisSkaicius(skaiciai) {
 console.log(pasikartojantisSkaicius([1, 2, 2, 5, 6, 6]));
 console.log(pasikartojantisSkaicius([1, 2, 2, 2, 5, 6, 6]));
 console.log(pasikartojantisSkaicius([1, 2, 2, 2, 5, 6, 6, 7, 7, 7, 7]));
+
+console.log('-----------------');
+// 13. Sukurti funkciją, kuri grąžins vis duotos sąrašo skaičius, kurie yra tarp dviejų nurodytų reikšmių.
+
+function interavalas(skaiciai, int1, int2) {
+    let naujiSkaiciai = [];
+    for (let i = 0; i < skaiciai.length; i++) {
+        if (skaiciai[i] >= int1 && skaiciai[i] <= int2) {
+            naujiSkaiciai.push(skaiciai[i]);
+        }
+    }
+    return naujiSkaiciai;
+}
+console.log(interavalas([2, 5, 36, 8, 15, 6], 5, 20));
+
+console.log('-----------------');
+// 14. Parašyti funkciją, kuri iš žodžių sąrašo išrinktų ir grąžintų tik tuos žodžius, kuriuose yra raidė e.
+
+function raideE(zodziai) {
+  }
+console.log(raideE('egle'));
