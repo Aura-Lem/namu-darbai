@@ -126,3 +126,53 @@ console.log(zodziuSeka('Siandien yra penktadienis'));
 console.log('-----------------');
 // 10. Funkcija, kuri grąžina pirmą skaičių masyve, kuris dalinasi iš 7.
 
+function skaiciusIs7(skaiciai) {
+    let skaicius = 0;
+    for (let i = 0; i < skaiciai.length; i++) {
+        if (skaiciai[i] % 7 === 0) {
+          skaicius = skaiciai[i];
+        }
+    
+    }
+    return skaicius;
+}
+console.log(skaiciusIs7([1, 8, 14, 20]));
+
+console.log('-----------------');
+// 11. Funkcija, kuri priima masyvą vardų ir grąžina tik tuos, kurie prasideda 'A' raide.
+
+function vardaiIsA(vardai) {
+    let varduSarasas = [];
+    for (let i = 0; i < vardai.length; i++) {
+        let vardas = vardai[i];
+        if (vardas[0] === 'A') {
+            varduSarasas.push(vardas);
+        }
+    }
+    return varduSarasas;
+}
+console.log(vardaiIsA(['Aurelija', 'Jone', 'Adelija']));
+console.log(vardaiIsA(['Ugnius', 'Jone', 'Nijole']));
+console.log(vardaiIsA(['Ugnius', 'Jone', 'Arvidas']));
+
+console.log('-----------------');
+// 12. Funkcija, kuri turi sąraše rasti skaičių, kuris jame kartojasi daugiau nei vieną kartą.
+
+function pasikartojantisSkaicius(skaiciai) {
+    let sarasas = [];
+    let sarasas2 = [];
+    for (let i = 0; i < skaiciai.length; i++) {
+        if (skaiciai[i] === skaiciai[i+1]) {
+            sarasas.push(skaiciai[i]);
+        }
+    }
+    for (let i = 0; i < sarasas.length; i++) {
+        if (sarasas[i] !== sarasas[i+1]) {
+            sarasas2.push(sarasas[i]);
+        }
+    }
+    return sarasas2;
+}
+console.log(pasikartojantisSkaicius([1, 2, 2, 5, 6, 6]));
+console.log(pasikartojantisSkaicius([1, 2, 2, 2, 5, 6, 6]));
+console.log(pasikartojantisSkaicius([1, 2, 2, 2, 5, 6, 6, 7, 7, 7, 7]));
