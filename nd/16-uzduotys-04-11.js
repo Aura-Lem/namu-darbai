@@ -1,0 +1,128 @@
+// 1. Parašyti funkciją, kuri išvestų skaičiaus faktorialą.
+
+function faktorialas(n) {
+    for (let i = n - 1; i >= 1; i--) {
+        n = n * i;
+    }
+    return n;
+}
+
+console.log(faktorialas(5));
+console.log(faktorialas(12));
+console.log(faktorialas(2));
+console.log(faktorialas(20));
+console.log(faktorialas(7));
+
+console.log('-----------------');
+// 2. Parašyti funkciją, kuri apskaičiuotų kiek kartų tam tikra raidė pasikartoja žodyje arba sakinyje.
+
+function pasikartojantiRaide(zodis, raide) {
+    let suma = 0;
+    for (let i = 0; i < zodis.length; i++) {
+        if (zodis[i] === raide) {
+           suma += 1;
+        }
+    }
+    return suma;
+}
+
+console.log(pasikartojantiRaide('kulverstukas', 'u'));
+console.log(pasikartojantiRaide('pavasaris', 'a'));
+console.log(pasikartojantiRaide('tu', 'u'));
+
+console.log('-----------------');
+// 3. Parašyti funkciją, kuri grąžintų visus skaičiaus 3 kartotinius nuo 1 iki 50.
+
+function kartotiniai3(number) {
+    for (let i = 1; i <= 50; i++) {
+        if (i % number === 0) {
+            console.log(i);
+        }
+    }
+}
+kartotiniai3(3);
+
+console.log('-----------------');
+// 4. Parašyti funkciją, kuri patikrintų ar duotas žodis yra palindromas.
+
+function palindromas(zodis) {
+    let pal = zodis.split('').reverse().join('');
+    if (zodis.toLowerCase() === pal.toLowerCase()) { 
+    return true;
+  } else {
+    return false;
+  }
+}
+console.log(palindromas('abba'));
+console.log(palindromas('Madam'));
+console.log(palindromas('vasara'));
+
+console.log('-----------------');
+// 5. Parašyti funkciją, kuri suskaičiuoja kiek balsių yra žodyje.
+
+function balses(zodis) {
+    let sum = 0;
+    for (let i = 0; i < zodis.length; i++){
+        let mazosRaides = zodis.toLowerCase();
+        if (mazosRaides[i] === 'a' || mazosRaides[i] ===  'e' || mazosRaides[i] ===  'i' || mazosRaides[i] ===  'o' || mazosRaides[i] ===  'u') {
+            sum += 1;
+        }
+    }
+    return sum;
+}
+console.log(balses('vasara'));
+console.log(balses('brrr'));
+console.log(balses('balandis'));
+console.log(balses('ananasas'));
+console.log(balses('kulverstukas'));
+
+console.log('-----------------');
+// 6. Sukurti funkciją, kuri visus tarpus tekste pakeičia pabraukimais.
+
+function tarpai(tekstas) {
+    return tekstas.replaceAll(' ', '_');
+}
+console.log(tarpai('Laba diena'));
+console.log(tarpai('Laba diena, kaip sekasi?'));
+
+console.log('-----------------');
+// 7. Sukurti funkciją, kuri padvigubina visus skaičius masyve.
+
+function dvigubinimas(skaiciai) {
+    let dvigubas = [];
+    for (let i = 0; i < skaiciai.length; i++) {
+        dvigubas.push(skaiciai[i] * 2);
+    }
+    return dvigubas;
+}
+console.log(dvigubinimas([2, 6, 5, 10]));
+
+console.log('-----------------');
+// 8. Sukurti funkciją, kuri suranda ilgiausią žodį sakinyje.
+
+function ilgiausiasZodis(tekstas) {
+    let zodis = tekstas.split(' ');
+    let ilgiausias = '';
+    for (let i = 0; i < zodis.length; i++) {
+    if (zodis[i].length > ilgiausias.length) {
+        ilgiausias = zodis[i];
+    }
+    }
+    return ilgiausias;
+}
+console.log(ilgiausiasZodis('Siandien jau penktadienis'));
+console.log(ilgiausiasZodis('Ilgiausias zodis tekste'));
+
+console.log('-----------------');
+// 9. Funkcija, kuri išrikiuoja žodžius pagal ilgį didėjančia tvarka.
+
+function zodziuSeka(tekstas) {
+   let zodis = tekstas.split(' ');
+   return zodis.sort((a, b) => b.length - a.length);
+}
+console.log(zodziuSeka('Ilgiausias zodis tekste'));
+console.log(zodziuSeka('Siandien yra penktadienis'));
+
+console.log('-----------------');
+// 10. Funkcija, kuri grąžina pirmą skaičių masyve, kuris dalinasi iš 7.
+
