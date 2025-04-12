@@ -195,5 +195,17 @@ console.log('-----------------');
 // 14. Parašyti funkciją, kuri iš žodžių sąrašo išrinktų ir grąžintų tik tuos žodžius, kuriuose yra raidė e.
 
 function raideE(zodziai) {
+    naujas = [];
+    for (let i = 0; i < zodziai.length; i++) {
+        let zodis = zodziai[i];
+            for (let j = 0; j < zodis.length; j++) {
+                if (zodis[j] === 'e') {
+                    
+                }
+                
+            }
+            naujas.push(zodis);
+    }
+    console.log(naujas);
   }
-console.log(raideE('egle'));
+console.log(raideE('egle', 'pusis', 'liepa'));
