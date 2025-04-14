@@ -1,6 +1,7 @@
 {
   "name": "namu-darbai",
   "version": "1.0.0",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "04-11": "node --watch ./nd/16-uzduotys-04-11.js",
