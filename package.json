@@ -4,6 +4,7 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
+    "teksto": "node --watch ./nd/17-teksto-manipuliacija.js",
     "04-11": "node --watch ./nd/16-uzduotys-04-11.js",
     "uzduotys": "node --watch ./nd/15-uzduotys-04-10.js",
     "mini": "node --watch ./nd/14-mini.js",
