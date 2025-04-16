@@ -84,20 +84,20 @@ console.log(onlyLetters('Apelsinas,1234!'));
 
 // 9. Rasti ilgiausia zodi sakinyje.
 
-// function longestWord(sentence) {
-//      const zodziai = sentence.split(' ');
-//      let maxLen = 0;
-//      let Zmax = '';
-//      for (zodis in zodziai) {
-//         zodziai[zodis] = zodziai[zodis].replace(/[^a-zA-Z]/g, '');
-//         if (zodziai[zodis].length > maxLen) {
-//             Zmax = zodziai[zodis];
-//             maxLen = zodziai[zodis].length;
-//         }
-//      }
-//      return Zmax;
-// }
-//console.log(longestWord('labas rytas, Lietuva, as esu Aurelija'));
+ function longestWord(sentence) {
+      const zodziai = sentence.split(' ');
+      let maxLen = 0;
+      let Zmax = '';
+      for (const zodis in zodziai) {
+         zodziai[zodis] = zodziai[zodis].replace(/[^a-zA-Z]/g, '');
+         if (zodziai[zodis].length > maxLen) {
+             Zmax = zodziai[zodis];
+             maxLen = zodziai[zodis].length;
+         }
+      }
+      return Zmax;
+ }
+console.log(longestWord('labas rytas, Lietuva, as esu Aurelija'));
 
 // 10. Pakeisti balses i *.
 
@@ -106,7 +106,7 @@ function maskVowels(str) {
 }
 console.log(maskVowels('Apelsinas'));
 
-// 11. 
+// 11. Iskirpti tarpus.
 
 function trimString(str) {
     return str.trim();
@@ -114,7 +114,7 @@ function trimString(str) {
 
 console.log(trimString('     akla'));
 
-// 12. 
+// 12. Pakeisti tarpus bruksneliais.
 
 function toKebabCase(str) {
     //return str.toLowerCase(str).replaceAll(' ', '-');
@@ -130,9 +130,127 @@ function wordCount(sentence) {
 }
 console.log(wordCount('labas vienas du'));
 
-// 14. 
+// 14. Pakartoti duota reiksme.
 function repeatString(str, n) {
     return str.repeat(n);
 }
 
 console.log(repeatString('a', 3));
+
+// 15. Pakeisti teksta, kad zodis prasidetu didziaja raide.
+
+function toCamelCase(str) {
+    const words = str.split(' ');
+    let cCase = '';
+    for (let i = 0; i < words.length; i++) {
+        if ( i === 0) {
+            cCase += words[i].toLowerCase();
+        } else {
+            cCase += words[i].charAt(0).toUpperCase();
+            cCase += words[i].slice(1).toLowerCase();
+        }
+    }
+    return cCase;
+}
+console.log(toCamelCase('vienas js nd darbas'));
+
+// 16. Patikrinti ar tekstui priklauso tik skaiciai.
+function isOnlyNumbers (str) {
+    const numbers = '0123456789';
+    for (const char in str) {
+        if (numbers.includes(str[char]) === false) {
+            return false;
+        }
+    }
+    return true;
+}
+
+console.log(isOnlyNumbers('1vienas123'));
+
+// 17. Ar zodis yra anagrama.
+
+function areAnagrams( str1, str2) {
+    const normalize = str => str.toLowerCase().split('').sort().join('');
+    return normalize(str1) === normalize(str2);
+}
+console.log(areAnagrams('avis', 'savi'));
+
+// 18. Sutrumpinti zodi ir prideti ...
+function truncate (str, maxLength) {
+    if (str.length <= maxLength) {
+        return str + '...';
+    } else {
+        return str.slice(0, maxLength) + '...';
+    }
+}
+console.log(truncate('pomidoras', 4));
+
+//19. Pakeisti didziasias raide i mazasias ir atvirksciai.
+function swapCase(str) {
+    const raides = str.split('');
+    let zodis = '';
+    for (const i in raides) {
+        if (raides[i] === raides[i].toLowerCase()) {
+            zodis += raides[i].toUpperCase();
+        } else {
+            zodis += raides[i].toLowerCase();
+        }
+    }
+    return zodis;
+}
+console.log(swapCase('LabaDiena'));
+
+// 20. Isimti simbolius is teksto.
+function removePunctuation(str) {
+    return str.replace(/[.,!?;:-]/g, '');
+}
+console.log(removePunctuation('hi!... I say hello?'));
+
+// 21. 
+
+function splitWords(str) {
+    return str.trim().split(' ');
+}
+console.log(splitWords('hghdhf jfjhrjj jjfdjj'));
+
+// 22. Suskaiciuoti didziasias raides.
+
+function countUpperCase(str) {
+    let kiekis = str.match(/[A-Z]/g)
+    return kiekis.length;
+}
+console.log(countUpperCase('VienasDuTrysSeptyni'));
+
+// 23. Patikrinti ar yra tekstas.
+function containsWord (sentence, word) {
+    return sentence.toLowerCase().includes(word.toLowerCase());
+}
+console.log(containsWord('Vienas namas yra liudnas', 'liudnas'));
+
+// 24. Pakeicia pasirinkta zodi kitu.
+function replaceAllWords(str, target, replacement) {
+    return str.split(target).join(replacement);
+}
+console.log(replaceAllWords('Tomas yra ponas bajoras. Tomas raudonas kaip pomidoras', 'Tomas', 'Jonas'));
+
+// 25. Uzkeicia simbolius zvaigzdutemis
+function maskString (str) {
+    return str.slice(-4).padStart(str.length, '*');
+}
+console.log(maskString('Pomidoras'));
+
+// 26. Kas antra raide pakeicia i didziaja.
+
+function capitalizeEverySecond (str) {
+    const raides = str.split('');
+    let zodis = '';
+    for (let i = 0; i < str.length; i++) {
+        if (i % 2 === 0) {
+            zodis += raides[i].toUpperCase();
+        } else {
+            zodis += raides[i].toLowerCase();
+        }
+    }
+    return zodis;
+}
+console.log(capitalizeEverySecond('apelsinas mandarinas'));
