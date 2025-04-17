@@ -12,11 +12,11 @@ class animal {
     feed(food) {
         if (this.isHungry === true && this.wantedFood === food) {
             this.isHungry = false;
-            return 'Ačiū už pietus!'
+            return "Ačiū už pietus!"
         } else if (this.isHungry === true) {
-            return 'Duok tinkamo maisto!'
+            return "Duok tinkamo maisto!"
         } else  {
-            return 'Nenoriu valgyt.'
+            return "Nenoriu valgyt."
         }
     }
 }
