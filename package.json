@@ -4,6 +4,7 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
+    "in": "node --watch ./nd/in.js",
     "class": "node --watch ./nd/18-class.js",
     "teksto": "node --watch ./nd/17-teksto-manipuliacija.js",
     "04-11": "node --watch ./nd/16-uzduotys-04-11.js",
