@@ -11,7 +11,7 @@ let sekmadienis = [9, 12, 16, 14, 11];
 
 function vidutineTemperatura(diena) {
     let vidurkis = 0;
-    for ( i = 0; i < diena.length; i++) {       
+    for (let i = 0; i < diena.length; i++) {       
         vidurkis += diena[i];
     }
     return vidurkis / diena.length;
@@ -31,7 +31,7 @@ let didziausia = -Infinity;
 
 function didziausiaTemperatura (diena) {
     let didziausia = -Infinity;
-         for ( i = 0; i < diena.length; i++) {
+         for (let i = 0; i < diena.length; i++) {
             if (diena[i] > didziausia) {
                 didziausia = diena[i];
             }
@@ -47,13 +47,13 @@ console.log(didziausiaTemperatura(penktadienis));
 console.log(didziausiaTemperatura(sestadienis));
 console.log(didziausiaTemperatura(sekmadienis));
 
-console.log('3) Parasyti funkcija, kuri apskaiciuotu norimos dienos zemiausia temperatura');
+console.log('c) Parasyti funkcija, kuri apskaiciuotu norimos dienos zemiausia temperatura');
 
 let maziausia = Infinity;
 
 function maziausiaTemperatura (diena) {
     let maziausia = Infinity;
-         for ( i = 0; i < diena.length; i++) {
+         for (let i = 0; i < diena.length; i++) {
             if (diena[i] < maziausia) {
                 maziausia = diena[i];
             }
@@ -69,7 +69,28 @@ console.log(maziausiaTemperatura(penktadienis));
 console.log(maziausiaTemperatura(sestadienis));
 console.log(maziausiaTemperatura(sekmadienis));
 
+console.log('d) Parasyti funkcija, kuriai davus visas savaites dienas, ji suranda, kuria diena buvo zemiausia, o kuria auksciausia temperatura');
+
+
+
+
+
+
 console.log('e) Parasyti funkcija, kuri apskaiciuotu visos savaites vidutine temperatura');
+
+const list = [];
+list.push(...pirmadienis, ...antradienis, ...treciadienis, ...ketvirtadienis, ...penktadienis, ...sestadienis, ...sekmadienis);
+let result = 0;
+function savaitesVidurkis(a) {
+    let count = 0;
+    for (let i = 0; i < list.length; i++) {
+        count += list[i];
+        result = count / list.length;
+    }
+    return result;
+}
+
+console.log(savaitesVidurkis(list));
 
 
 

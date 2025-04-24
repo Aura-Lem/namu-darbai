@@ -119,8 +119,8 @@ function isrinktiRaides(tekstas, skaicius) {
         return 'Reikia irasyti teksta.'
     } if (tekstas.length > 100) {
         return 'Tekstas per ilgas';
-    } for (i = 0; i <= tekstas.length; i++) {
-        let raide = tekstas[0];
+    } for (let i = 0; i <= tekstas.length; i++) {
+        let raide = tekstas[skaicius - 1];
         console.log(raide);
     };
     
@@ -130,3 +130,4 @@ console.log(isrinktiRaides(2, 2));
 console.log(isrinktiRaides('', 2));
 console.log(isrinktiRaides('laaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabai ilgas tekstas', 2));
 isrinktiRaides('Labas', 2);
+isrinktiRaides('Labas', 5);

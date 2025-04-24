@@ -3,7 +3,7 @@ console.log('1---------------');
 
 let number = 0;
 function dalybaIs4(number){
-    for(i = 0; i <= 100; i++) {
+    for(let i = 0; i <= 100; i++) {
         if(i % 4 === 0) {
             console.log('Fizz');
         } else {
@@ -21,7 +21,7 @@ console.log('2---------------');
 
 let number1 = 0;
 function dalybaIsVisu(number1){
-    for(i = 0; i <= 100; i++) {
+    for(let i = 0; i <= 100; i++) {
         if (i % 3 === 0 && i % 5 === 0) {
             console.log('FizzBuzz')
         } else if (i % 3 === 0) {
@@ -37,6 +37,17 @@ function dalybaIsVisu(number1){
 
 dalybaIsVisu(number1);
 
+console.log('3---------------');
+// Spausdinti pirmuosius 10 skaiciu Fibonacio sekoje.
+
+const fib = [0, 1];
+function fibonacioSeka (n) {
+    for (let i = 2; i < n; i++) {
+        fib.push(fib[i - 1] + fib[i - 2]);
+    }
+    return fib;
+}
+console.log(fibonacioSeka(10));
 
 console.log('4---------------');
 // Spausdinti skaicius nuo 1 iki 20 ir prie kiekvieno lyginio skaiciaus prideti 'Even', o prie kiekvieno nelyginio - 'Odd'.
@@ -73,15 +84,33 @@ console.log('7---------------');
 // Sukurti for cikla, kad patikrinti ar skaicius yra pirminis ir isspausdintu pranesima.
 
 function pirminisSkaicius(num) {
-if (num <= 1) return false;
-if (num < 3) return true;
-if (num % 2 === 0 || num % 3 === 0) return false;
-
-for (let i = 1; i <= 1000; i++) {
-    if (pirminisSkaicius(i) === true) {
-        console.log(i + ' ' + pirminisSkaicius(i));
+    if (num <= 1) {
+        return false;
+    } for (let i = 2; i * i <= num; i++) {
+        if (num % i === 0) {
+            return false;
+        }
     }
+    return true;
 }
 
+console.log(pirminisSkaicius(10));
+
+console.log('8---------------');
+// Spausdinti pirmuosius 10 pirminiu skaiciu naudojant for cikla ir if salygas.
+
+
+console.log('9---------------');
+// Spausdinti visu lyginiu skaiciu nuo 1 iki 100 suma.
+
+function lyginiuSkaiciuSuma(a, b) {
+    let count = 0;
+    for (let i = a; i <= b; i++) {
+        if (i % 2 === 0) {
+            count += i;
+        }
+    }
+    return count;
 }
 
+console.log(lyginiuSkaiciuSuma(1, 100));

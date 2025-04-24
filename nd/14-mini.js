@@ -39,7 +39,7 @@ console.log('6----------------');
 
 let sarasas = ['pirmas', 'antras', 'trecias', 'ketvirtas', 'penktas'];
 let nariai = '';
-for (i = 0; i < sarasas.length; i++) {
+for (let i = 0; i < sarasas.length; i++) {
 
     nariai += sarasas[i] + ' ';
    
@@ -50,7 +50,7 @@ console.log('7----------------');
 let vardai = ['Jonas', 'Maryte', 'Petras', 'Ona'];
 let vardas = '';
 
-for (i = 0; i < vardai.length; i++) {
+for (let i = 0; i < vardai.length; i++) {
     vardas = vardai[i];
     console.log('Mano vardas - ' + vardas);
 }
@@ -58,7 +58,7 @@ for (i = 0; i < vardai.length; i++) {
 console.log('8----------------');
 let skaiciai = [1, 2, 3, 4, 5];
 let susumuoti = 0;
-for ( i = 0; i <= skaiciai.length; i++){
+for (let i = 0; i <= skaiciai.length; i++){
     susumuoti = susumuoti + i;
 }
 console.log(susumuoti);
@@ -67,7 +67,7 @@ console.log('9----------------');
 
 let elementai = [6, 9, 4, 3, 5];
 let vertes = ''; 
-for (i = elementai.length - 1; i >= 0; i--) {
+for (let i = elementai.length - 1; i >= 0; i--) {
     vertes = elementai[i];
     console.log(vertes);
 }
@@ -195,10 +195,13 @@ for (let i = 0; i < word1.length; i++) {
 console.log(kiekis1);
 
 console.log('24----------------');
-naujasZodis = 'Nebeprisikiskiakopusteliaudavome';
+let naujasZodis = 'Nebeprisikiskiakopusteliaudavome';
 for (let i = 0; i <naujasZodis.length; i++) {
-    
+    if (naujasZodis[i] === 'e') {
+        console.log(`e raide yra ${i+1} pozicijoje.`);
+    }
 }
+
 
 console.log('25----------------');
 let lobis = 150;
@@ -483,10 +486,10 @@ console.log(pirmaRaideA('apelsinas'));
 
 console.log('Funkcijos 26----------------');
 
-function zodzioIlgis(zodis) {
+function zodzioIlgis1(zodis) {
     return zodis.length;
 }
-console.log(zodzioIlgis('Labas'));
+console.log(zodzioIlgis1('Labas'));
 
 console.log('Funkcijos 27----------------');
 
