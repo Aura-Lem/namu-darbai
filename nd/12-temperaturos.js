@@ -1,7 +1,7 @@
 console.log('a) Parasyti funkcija, kuri apskaiciuotu norimos dienos vidutine temperatura');
 
 let pirmadienis = [0, 3, 5, 8, 6];
-let antradienis = [-5, -3, -2, 0, 1];
+let antradienis = [-5, -3, -2, 0, -1];
 let treciadienis = [2, 5, 8, 10, 7];
 let ketvirtadienis = [5, 8, 11, 9, 6];
 let penktadienis = [6, 8, 11, 9, 5];
@@ -91,6 +91,26 @@ function savaitesVidurkis(a) {
 }
 
 console.log(savaitesVidurkis(list));
+
+
+console.log('f) Parasyti funkcija, kuriai nurodzius savaites diena ir numatoma krituliu kieki, funkcija pranestu kaip siuloma pasiruosti einant i lauka');
+
+function krituliai(diena, krituliuKiekis) {
+    if (krituliuKiekis === 'sauleta' && didziausiaTemperatura(diena) > 10) {
+        console.log('Pasitepk kremu nuo saules, lauke sauleta ir silta!');
+    } if (krituliuKiekis === 'debesuota' && didziausiaTemperatura(diena) > 10) {
+        console.log('Lauke silta, bet pasiimk sketi.');
+    } if (krituliuKiekis === 'sauleta' && didziausiaTemperatura(diena) <= 10) {
+        console.log('Apsirenk! Lauke salta.');
+    } if (krituliuKiekis === 'debesuota' && didziausiaTemperatura(diena) <= 0) {
+        console.log('Pasiimk morka! Lipdysim besmegeni!');
+    }
+}
+
+krituliai(penktadienis, 'sauleta');
+krituliai(antradienis, 'sauleta');
+krituliai(antradienis, 'debesuota');
+krituliai(penktadienis, 'debesuota');
 
 
 
