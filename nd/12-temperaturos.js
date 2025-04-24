@@ -87,7 +87,7 @@ function savaitesVidurkis(a) {
         count += list[i];
         result = count / list.length;
     }
-    return result;
+    return result.toFixed(2);
 }
 
 console.log(savaitesVidurkis(list));
